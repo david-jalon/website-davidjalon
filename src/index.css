@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terminal: #0D1117;
+  --color-surface: #161B22;
+  --color-text: #C9D1D9;
+  --color-amber: #FFB000;
+  --color-border: #21262D;
+  --color-dot-red: #ef4444;
+  --color-dot-yellow: #eab308;
+  --color-dot-green: #22c55e;
+
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  overflow-x: hidden;
+}
