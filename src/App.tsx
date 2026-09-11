@@ -22,7 +22,7 @@ function App() {
         borderColor="rgba(255, 176, 0, 0.28)"
         hoverFillColor="rgba(255, 176, 0, 0.30)"
       />
-      <div className="relative z-10 mx-auto w-full max-w-content border-x border-border px-6">
+      <div className="relative z-10 mx-auto w-full max-w-content border-x border-border bg-surface/60 px-6">
         <Nav />
         <main>
           <Hero />

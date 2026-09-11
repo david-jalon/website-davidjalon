@@ -6,7 +6,7 @@ export default function Skills() {
       {skills.map((group) => (
         <div
           key={group.category}
-          className="rounded-2xl border border-border bg-surface/60 p-5 backdrop-blur-md"
+          className="rounded-2xl border border-border bg-surface p-5"
         >
           <h3 className="mb-3 text-xs text-text/60">{group.category}</h3>
           <ul className="flex flex-wrap gap-2">

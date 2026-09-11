@@ -2,7 +2,7 @@ import { education } from '../data/education'
 
 export default function Education() {
   return (
-    <div className="rounded-2xl border border-border bg-surface/60 p-6 backdrop-blur-md">
+    <div className="rounded-2xl border border-border bg-surface p-6">
       <ol className="flex flex-col gap-5">
         {education.map((item) => (
           <li key={`${item.title}-${item.school}`} className="border-l-2 border-amber/30 pl-4">

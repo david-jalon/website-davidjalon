@@ -35,8 +35,7 @@ section[id] {
 /* Tarjeta glass: superficie translúcida + borde degradado al hacer hover */
 .link-card {
   position: relative;
-  background: color-mix(in srgb, var(--color-surface) 60%, transparent);
-  backdrop-filter: blur(8px);
+  background: var(--color-surface);
   transition: all 0.3s ease;
 }
 
@@ -61,7 +60,6 @@ section[id] {
 .link-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 32px rgba(255, 176, 0, 0.15);
-  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
 }
 
 /* Cursor parpadeante de terminal */

@@ -3,7 +3,7 @@ import Avatar from './Avatar'
 
 export default function Hero() {
   return (
-    <section id="inicio" className="py-12 md:py-16">
+    <section id="inicio" className="py-6 md:py-8">
       <div className="flex flex-col gap-6 md:flex-row md:items-stretch">
         <div className="w-full md:max-w-2xl">
           <div className="link-card overflow-hidden rounded-2xl">
