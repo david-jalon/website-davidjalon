@@ -23,6 +23,10 @@ body {
   font-family: var(--font-mono);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Las anclas no quedan ocultas bajo el nav sticky */
 section[id] {
   scroll-margin-top: 72px;
@@ -97,6 +101,9 @@ button:focus-visible {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
   .link-card:hover {
     transform: none;
   }

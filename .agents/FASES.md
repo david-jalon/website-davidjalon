@@ -44,22 +44,22 @@
 - [x] Auditoría: h2 por sección, a11y del desplegable (`aria-controls` + `inert`), `DESIGN.md` sincronizado
 
 ## Fase 3 — Interacción y accesibilidad
-**Estado:** pendiente
+**Estado:** ✅ completada
 
-- [ ] Menú hamburguesa en móvil (`aria-expanded`/`aria-controls`, se cierra al navegar)
-- [ ] Nav activo según sección visible (`IntersectionObserver`)
-- [ ] Scroll suave respetando `prefers-reduced-motion`
-- [ ] Revisión de navegación por teclado
-- [ ] Verificación responsive sin scroll horizontal
+- [x] Menú hamburguesa en móvil (`aria-expanded`/`aria-controls`, se cierra al navegar y con Escape)
+- [x] Nav activo según sección visible (`IntersectionObserver` + `aria-current`)
+- [x] Scroll suave respetando `prefers-reduced-motion`
+- [x] Revisión de navegación por teclado
+- [x] Verificación responsive sin scroll horizontal
 
 ## Fase 4 — SEO, rendimiento y deploy
-**Estado:** pendiente
+**Estado:** en curso
 
-- [ ] Meta description, Open Graph y Twitter card
-- [ ] Favicon y `og-image`
-- [ ] Optimizar assets (avatar.png, fuentes)
-- [ ] Deploy en Vercel
-- [ ] Verificación con Lighthouse
+- [x] Meta description, Open Graph y Twitter card en `index.html`
+- [x] Favicon (`public/favicon.svg`) y `og-image.png` (1200×630)
+- [x] Optimizar assets: `avatar.png` re-encodeado (349 KB → 7 KB), fuentes con `display=swap`
+- [ ] Deploy en Vercel (lo ejecuta el usuario: ver instrucciones)
+- [ ] Verificación con Lighthouse sobre la URL desplegada
 
 ## Fase 5 — Tests y cierre
 **Estado:** pendiente
