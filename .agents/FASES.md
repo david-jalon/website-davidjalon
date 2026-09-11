@@ -58,8 +58,8 @@
 - [x] Meta description, Open Graph y Twitter card en `index.html`
 - [x] Favicon (`public/favicon.svg`) y `og-image.png` (1200×630)
 - [x] Optimizar assets: fuentes con `display=swap`; `favicon.svg` y `og-image.png` generados (avatar se mantiene original)
-- [ ] Deploy en Vercel (lo ejecuta el usuario: ver instrucciones)
-- [ ] Verificación con Lighthouse sobre la URL desplegada
+- [x] Deploy en Vercel (lo ejecuta el usuario: ver instrucciones)
+- [x] Verificación con Lighthouse sobre la URL desplegada
 
 ## Fase 5 — Tests y cierre
 **Estado:** ✅ completada
