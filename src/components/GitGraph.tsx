@@ -12,16 +12,22 @@ export default function GitGraph({ item, isFirstVfx, isLast }: GitGraphProps) {
   return (
     <div className="relative w-12 shrink-0 pb-6">
       <span
-        className={`absolute left-[6px] top-0 w-px -translate-x-1/2 bg-amber/40 ${
-          isLast ? 'h-5' : 'bottom-0'
+        className={`absolute left-[6px] top-0 w-px -translate-x-1/2 ${
+          isLast
+            ? 'h-30 bg-gradient-to-b from-amber/40 from-55% to-transparent'
+            : 'bottom-0 bg-amber/40'
         }`}
         aria-hidden="true"
       />
       {!isMerge && (
         <span
-          className={`absolute left-[36px] w-px -translate-x-1/2 bg-blue/40 ${
+          className={`absolute left-[36px] w-px -translate-x-1/2 ${
             isFirstVfx ? 'top-[13px]' : 'top-0'
-          } ${isLast ? 'h-5' : 'bottom-0'}`}
+          } ${
+            isLast
+              ? 'h-25 bg-gradient-to-b from-blue/40 from-55% to-transparent'
+              : 'bottom-0 bg-blue/40'
+          }`}
           aria-hidden="true"
         />
       )}
