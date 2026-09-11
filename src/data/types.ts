@@ -9,6 +9,7 @@ export type Profile = {
   linkedin: string
   github: string
   cvUrl: string
+  bio: string[]
 }
 
 export type Experience = {
@@ -26,6 +27,12 @@ export type Project = {
   tags: string[]
   demoUrl?: string
   repoUrl?: string
+  icon: string
+}
+
+export type Link = {
+  label: string
+  url: string
   icon: string
 }
 

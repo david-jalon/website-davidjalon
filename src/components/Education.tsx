@@ -10,7 +10,7 @@ export default function Education() {
               {item.start} — {item.end}
             </span>
             <h3 className="mt-1 text-sm font-bold text-text">{item.title}</h3>
-            <p className="mt-0.5 text-xs text-text/60">{item.school}</p>
+            <p className="mt-0.5 text-xs text-text/70">{item.school}</p>
           </li>
         ))}
       </ol>

@@ -6,7 +6,7 @@ export default function Experience() {
 
   return (
     <div>
-      <div className="mb-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-text/60">
+      <div className="mb-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-text/70">
         <span className="flex items-center gap-2">
           <span className="h-2.5 w-2.5 rounded-full bg-amber" aria-hidden="true" />
           rama dev
@@ -35,7 +35,7 @@ export default function Experience() {
                 <div className="link-card rounded-xl px-5 py-4">
                   <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                     <h3 className="text-sm font-bold text-text">{item.role}</h3>
-                    <span className="text-xs text-text/50">
+                    <span className="text-xs text-text/70">
                       {item.start} — {item.end}
                     </span>
                   </div>

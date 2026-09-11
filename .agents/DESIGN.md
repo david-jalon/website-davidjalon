@@ -22,9 +22,10 @@ Sobria, precisa y sin adornos: el color y el fondo son fijos, no existe modo cla
 | Token | Hex | Uso |
 |---|---|---|
 | `--color-terminal` | `#0D1117` | Fondo general |
-| `--color-surface` | `#161B22` | Tarjetas y paneles (semi-transparente para el efecto glass) |
+| `--color-surface` | `#161B22` | Tarjetas y paneles |
 | `--color-text` | `#C9D1D9` | Texto principal |
-| `--color-amber` | `#FFB000` | Acento único: enlaces, iconos, foco, hover, highlights |
+| `--color-amber` | `#FFB000` | Acento: enlaces, iconos, foco, hover, highlights, rama dev del grafo |
+| `--color-blue` | `#58A6FF` | Rama vfx del grafo de experiencia |
 | `--color-border` | `#21262D` | Bordes y separadores |
 
 Colores auxiliares, usados **solo** en el motivo de ventana de terminal (los tres puntos):
@@ -60,7 +61,9 @@ Se carga con `font-display: swap`.
 
 ## 6. Superficies y patrones
 
-- **Tarjeta glass:** fondo `surface` semi-transparente + `backdrop-blur`, borde de 1px y radio ~16px.
+- **Tarjeta de superficie:** fondo `surface` opaco con borde fino y radio ~16px. El `backdrop-blur`
+  se reserva solo para el nav; las tarjetas no usan transparencia para no generar artefactos con el
+  fondo animado.
 - **Hover de tarjeta:** elevación de 2px, borde y glow ámbar suave, texto a ámbar. Transición 0.3s.
 - **Botones:** primario ámbar sólido con texto oscuro; secundario "fantasma" con borde ámbar.
 - **Motivo ventana de terminal:** barra superior con los tres puntos (rojo/amarillo/verde) y el

@@ -8,7 +8,7 @@ const links = [
 
 export default function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-terminal/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 -mx-6 border-b border-border bg-terminal/80 backdrop-blur-md">
       <nav
         className="mx-auto flex w-full max-w-content items-center justify-between gap-4 px-6 py-3"
         aria-label="Principal"

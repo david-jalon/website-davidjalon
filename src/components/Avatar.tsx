@@ -11,7 +11,7 @@ export default function Avatar({ className = '' }: AvatarProps) {
         <span className="h-2 w-2 rounded-full bg-dot-red" />
         <span className="h-2 w-2 rounded-full bg-dot-yellow" />
         <span className="h-2 w-2 rounded-full bg-dot-green" />
-        <span className="ml-1.5 text-[10px] text-text/50">avatar.png</span>
+        <span className="ml-1.5 text-[10px] text-text/70">avatar.png</span>
       </div>
       <div className="relative min-h-0 flex-1">
         <img

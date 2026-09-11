@@ -11,11 +11,11 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-dot-red" />
               <span className="h-2.5 w-2.5 rounded-full bg-dot-yellow" />
               <span className="h-2.5 w-2.5 rounded-full bg-dot-green" />
-              <span className="ml-2 text-xs text-text/50">~/david</span>
+              <span className="ml-2 text-xs text-text/70">~/david</span>
             </div>
             <div className="flex flex-col gap-6 px-6 py-8 md:flex-row md:items-start md:gap-8 md:px-8 md:py-10">
               <div className="min-w-0 flex-1">
-                <p className="text-sm text-text/50">$ whoami</p>
+                <p className="text-sm text-text/70">$ whoami</p>
                 <h1 className="mt-2 text-3xl font-bold tracking-tight text-text md:text-5xl">
                   {profile.name}
                 </h1>

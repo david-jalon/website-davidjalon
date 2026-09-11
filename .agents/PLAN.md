@@ -1,6 +1,6 @@
 # website-davidjalon — Plan del proyecto
 
-> **Estado:** plan aprobado, pendiente de ejecución.
+> **Estado:** en ejecución (Fases 0–2 completadas).
 > **Fecha:** 2026-09-11
 
 ## 1. Qué es
@@ -35,6 +35,7 @@ terminal / editor de código en tema oscuro y acento ámbar. El contenido profes
 - **Tema ámbar fijo**, sin modo claro ni toggle.
 - **Diseño de color, tipografía y fondo** definido en `.agents/DESIGN.md`; JetBrains Mono como única familia.
 - **Contenido desacoplado** en `src/data/`, nunca hardcodeado en el JSX.
+- **Elemento firma:** la Experiencia se presenta como un grafo de commits (rama dev ámbar, rama vfx azul, merge diagonal).
 - **Accesibilidad** como suelo de calidad: teclado, foco visible, `prefers-reduced-motion`.
 
 ## 5. Estructura de archivos prevista
@@ -48,25 +49,28 @@ website-davidjalon/
 │  ├─ DESIGN.md
 │  ├─ FASES.md
 │  └─ PLAN.md
-├─ public/                      (favicon, og-image, CV_David-Jalon.pdf)
+├─ public/                      (avatar.png, CV_David-Jalon.pdf, favicon y og-image en Fase 4)
 ├─ src/
 │  ├─ main.tsx
 │  ├─ App.tsx
 │  ├─ index.css                 (@theme + estilos globales)
 │  ├─ components/               (un componente por archivo, PascalCase)
+│  │  ├─ Avatar.tsx
 │  │  ├─ Nav.tsx
 │  │  ├─ Hero.tsx
 │  │  ├─ About.tsx
 │  │  ├─ Experience.tsx
+│  │  ├─ GitGraph.tsx           (celda del grafo de commits)
 │  │  ├─ Projects.tsx
 │  │  ├─ Skills.tsx
 │  │  ├─ Education.tsx
 │  │  ├─ Contact.tsx
 │  │  ├─ Footer.tsx
-│  │  ├─ Section.tsx            (wrapper con ancho máx. y ancla)
+│  │  ├─ Section.tsx            (wrapper de sección con ancla y label)
 │  │  ├─ ShapeGridBackground.tsx (canvas del fondo animado)
 │  │  └─ CardIcon.tsx           (iconos SVG)
 │  └─ data/
+│     ├─ types.ts
 │     ├─ profile.ts
 │     ├─ experience.ts
 │     ├─ projects.ts
@@ -88,6 +92,7 @@ type Profile = {
   linkedin: string
   github: string
   cvUrl: string
+  bio: string[]
 }
 
 type Experience = {
@@ -108,6 +113,12 @@ type Project = {
   icon: string
 }
 
+type Link = {
+  label: string
+  url: string
+  icon: string
+}
+
 type SkillGroup = {
   category: string
   items: string[]
@@ -123,7 +134,7 @@ type Education = {
 
 ## 7. Fases de implementación
 
-El detalle por fase (objetivo, qué se construye, entregable y estado) está en `.agents/FASES.md`.
+El desglose por fase y su estado (checkboxes) está en `.agents/FASES.md`.
 
 1. Andamiaje del proyecto. ✅
 2. Sistema de diseño y shell. ✅

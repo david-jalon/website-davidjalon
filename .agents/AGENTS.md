@@ -22,18 +22,18 @@ con estética de terminal/code editor en tema oscuro y acento ámbar.
 - `src/components/` — componentes de UI (un componente por archivo, PascalCase)
 - `src/data/` — contenido tipado (perfil, experiencia, proyectos, skills, formación)
 - `src/index.css` — design tokens (`@theme`) y estilos globales
-- `public/` — assets estáticos (favicon, CV, imágenes)
-- `CV.md` — fuente de verdad del contenido profesional
-- `DESIGN.md` — sistema de diseño (color, tipografía, fondo, patrones)
-- `PLAN.md` — plan del proyecto (stack, arquitectura, decisiones, riesgos)
-- `FASES.md` — fases de implementación y su estado
+- `public/` — assets estáticos (avatar, CV, favicon)
+- `.agents/CV.md` — fuente de verdad del contenido profesional
+- `.agents/DESIGN.md` — sistema de diseño (color, tipografía, fondo, patrones)
+- `.agents/PLAN.md` — plan del proyecto (stack, arquitectura, decisiones, riesgos)
+- `.agents/FASES.md` — fases de implementación y su estado (desglose con checkboxes)
 
 ## Convenciones
 - Componentes en PascalCase y una función por archivo (`export default function Hero()`).
 - Variables y funciones en camelCase; tipos en PascalCase.
 - Cada sección de la página es un componente en `src/components/`.
 - El contenido editable vive en `src/data/`, no hardcodeado dentro del JSX.
-- Tailwind para el estilo; CSS propio solo para tokens y patrones complejos (glass, glow, grid).
+- Tailwind para el estilo; CSS propio solo para tokens y patrones complejos (link-card, glow, grid, grafo).
 - Toda animación respeta `prefers-reduced-motion`.
 - Foco de teclado visible siempre (outline ámbar).
 - Semántica HTML correcta y atributos ARIA cuando aporten.
@@ -52,8 +52,8 @@ con estética de terminal/code editor en tema oscuro y acento ámbar.
 - Si no estás seguro al 80%, pregunta. No inventes.
 
 ## Documentación
-- `DESIGN.md` — sistema de diseño: color, tipografía, fondo, patrones y elemento firma.
-- `PLAN.md` — plan del proyecto: stack, arquitectura, decisiones y riesgos.
-- `FASES.md` — fases de implementación, entregables y estado.
-- `CV.md` — contenido profesional de referencia.
-- `AGENT_TEMPLATE.md` — plantilla original de este documento.
+- `.agents/DESIGN.md` — sistema de diseño: color, tipografía, fondo, patrones y elemento firma.
+- `.agents/PLAN.md` — plan del proyecto: stack, arquitectura, decisiones y riesgos.
+- `.agents/FASES.md` — fases de implementación con desglose y estado.
+- `.agents/CV.md` — contenido profesional de referencia.
+- `.agents/AGENT_TEMPLATE.md` — plantilla original de este documento.

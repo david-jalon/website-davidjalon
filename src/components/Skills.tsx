@@ -8,7 +8,7 @@ export default function Skills() {
           key={group.category}
           className="rounded-2xl border border-border bg-surface p-5"
         >
-          <h3 className="mb-3 text-xs text-text/60">{group.category}</h3>
+          <h3 className="mb-3 text-xs text-text/70">{group.category}</h3>
           <ul className="flex flex-wrap gap-2">
             {group.items.map((item) => (
               <li
