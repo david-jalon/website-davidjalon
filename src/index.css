@@ -73,6 +73,15 @@ section[id] {
   animation: blink 1s step-end infinite;
 }
 
+/* Glow pulsante del avatar */
+@keyframes glow-pulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 176, 0, 0.4), 0 0 40px rgba(255, 176, 0, 0.2); }
+  50%      { box-shadow: 0 0 30px rgba(255, 176, 0, 0.6), 0 0 60px rgba(255, 176, 0, 0.3); }
+}
+.avatar-glow {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
 /* Ocultar scrollbar en listas que desbordan */
 .no-scrollbar {
   scrollbar-width: none;
@@ -93,6 +102,9 @@ button:focus-visible {
     transform: none;
   }
   .blink {
+    animation: none;
+  }
+  .avatar-glow {
     animation: none;
   }
 }

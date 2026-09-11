@@ -127,7 +127,7 @@ El detalle por fase (objetivo, qué se construye, entregable y estado) está en 
 
 1. Andamiaje del proyecto. ✅
 2. Sistema de diseño y shell. ✅
-3. Contenido y secciones. — pendiente
+3. Contenido y secciones. ✅
 4. Interacción y accesibilidad. — pendiente
 5. SEO, rendimiento y deploy. — pendiente
 6. Tests y cierre. — pendiente

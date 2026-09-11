@@ -43,7 +43,7 @@ Cada fase tiene el mismo esquema:
   componentes `Hero`, `About`, `Experience` (timeline/grafo de commits), `Projects`, `Skills`,
   `Education` y `Contact`.
 - **Entregable**: todas las secciones renderizan desde `src/data/`, sin texto hardcodeado en el JSX.
-- **Estado**: pendiente
+- **Estado**: ✅ completada
 
 ### Fase 3 — Interacción y accesibilidad
 - **Objetivo**: que la página se sienta viva y sea usable con teclado y en móvil.
