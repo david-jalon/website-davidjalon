@@ -33,7 +33,7 @@ Cada fase tiene el mismo esquema:
   `ShapeGridBackground`, `Section`, `Nav` (sticky con blur) y `Footer`.
 - **Entregable**: shell navegable con nav funcional, fondo animado, foco ámbar visible y
   `prefers-reduced-motion` respetado.
-- **Estado**: pendiente
+- **Estado**: ✅ completada
 
 ### Fase 2 — Contenido y secciones
 - **Objetivo**: renderizar todo el contenido del CV en las secciones de la página.

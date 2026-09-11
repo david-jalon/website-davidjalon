@@ -11,8 +11,88 @@
   --color-dot-green: #22c55e;
 
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --container-content: 68.75rem;
 }
 
 body {
   overflow-x: hidden;
+  background-color: var(--color-terminal);
+  color: var(--color-text);
+  font-family: var(--font-mono);
+}
+
+/* Las anclas no quedan ocultas bajo el nav sticky */
+section[id] {
+  scroll-margin-top: 72px;
+}
+
+.section-label {
+  font-size: 0.75rem;
+  color: var(--color-amber);
+}
+
+/* Tarjeta glass: superficie translúcida + borde degradado al hacer hover */
+.link-card {
+  position: relative;
+  background: color-mix(in srgb, var(--color-surface) 60%, transparent);
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.link-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(255, 176, 0, 0) 0%, rgba(255, 176, 0, 0) 100%);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+  transition: background 0.3s ease;
+  pointer-events: none;
+}
+
+.link-card:hover::before {
+  background: linear-gradient(135deg, rgba(255, 176, 0, 0.55) 0%, rgba(255, 176, 0, 0.25) 100%);
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(255, 176, 0, 0.15);
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
+}
+
+/* Cursor parpadeante de terminal */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+.blink {
+  animation: blink 1s step-end infinite;
+}
+
+/* Ocultar scrollbar en listas que desbordan */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-card:hover {
+    transform: none;
+  }
+  .blink {
+    animation: none;
+  }
 }

@@ -3,8 +3,9 @@ import { render, screen } from '@testing-library/react'
 import App from './App'
 
 describe('App', () => {
-  it('renderiza el nombre', () => {
+  it('muestra el shell con la marca', () => {
     render(<App />)
-    expect(screen.getByText(/David Jalón/i)).toBeInTheDocument()
+    expect(screen.getByText(/davidjalon/i)).toBeInTheDocument()
+    expect(screen.getByRole('navigation', { name: 'Principal' })).toBeInTheDocument()
   })
 })
