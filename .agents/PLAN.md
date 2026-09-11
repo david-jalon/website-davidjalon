@@ -140,8 +140,8 @@ El desglose por fase y su estado (checkboxes) está en `.agents/FASES.md`.
 2. Sistema de diseño y shell. ✅
 3. Contenido y secciones. ✅
 4. Interacción y accesibilidad. ✅
-5. SEO, rendimiento y deploy. — pendiente
-6. Tests y cierre. — pendiente
+5. SEO, rendimiento y deploy. — en curso (falta deploy en Vercel)
+6. Tests y cierre. ✅
 
 ## 8. Fuera de alcance
 

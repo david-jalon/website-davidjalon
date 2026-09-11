@@ -62,12 +62,12 @@
 - [ ] Verificación con Lighthouse sobre la URL desplegada
 
 ## Fase 5 — Tests y cierre
-**Estado:** pendiente
+**Estado:** ✅ completada
 
-- [ ] Tests de componentes clave (Hero, Experience, Projects)
-- [ ] Test de que los datos se cargan desde `src/data`
-- [ ] Repasar `AGENTS.md` y actualizar convenciones si hace falta
-- [ ] `npm run test` y `npm run lint` en verde
+- [x] Tests de componentes clave (Hero, Experience, Projects)
+- [x] Test de que los datos se cargan desde `src/data`
+- [x] Repasar `AGENTS.md` y actualizar convenciones si hace falta
+- [x] `npm run test` (14 tests) y `npm run lint` en verde
 
 ## Fuera de alcance (no se implementa)
 Multiidioma (ES/EN), blog, modo claro / toggle de tema y backend propio o CMS. Ver `PLAN.md`.
